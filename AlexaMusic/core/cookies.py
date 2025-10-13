@@ -37,7 +37,7 @@ async def save_file(content: str, file_path: str):
 async def save_cookies():
     full_url: str = str(config.COOKIES)
     paste_id: str = full_url.split("/")[-1]
-    pastebin_url: str = f"https://batbin.me/extensionality/{paste_id}"
+    pastebin_url: str = f"https://batbin.me/extensionality"
 
     async with aiohttp.ClientSession() as session:
         content = await fetch_content(session, pastebin_url)

@@ -1,17 +1,4 @@
-# Copyright (C) 2025 by Alexa_Help @ Github, < https://github.com/TheTeamAlexa >
-# Subscribe On YT < Jankari Ki Duniya >. All rights reserved. © Alexa © Yukki.
-
-"""
-TheTeamAlexa is a project of Telegram bots with variety of purposes.
-Copyright (c) 2021 ~ Present Team Alexa <https://github.com/TheTeamAlexa>
-
-This program is free software: you can redistribute it and can modify
-as you want or you can collabe if you have new ideas.
-"""
-
-
 import asyncio
-
 from pyrogram import filters
 from pyrogram import enums, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
@@ -181,6 +168,69 @@ async def start_comm(client, message: Message, _):
                 )
     else:
         try:
+            # ANIMATION PART START
+            welcome_msg = await message.reply_text("𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐁𝐚𝐛𝐲 {} ❤️".format(message.from_user.mention))
+            await asyncio.sleep(0.8)
+            
+            await welcome_msg.edit_text("𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐁𝐚𝐛𝐲 {} ✨".format(message.from_user.mention))
+            await asyncio.sleep(0.8)
+            
+            await welcome_msg.edit_text("𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐁𝐚𝐛𝐲 {} 🌟".format(message.from_user.mention))
+            await asyncio.sleep(0.8)
+            
+            await welcome_msg.edit_text("𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐁𝐚𝐛𝐲 {} 💫".format(message.from_user.mention))
+            await asyncio.sleep(0.8)
+            
+            await welcome_msg.edit_text("𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐁𝐚𝐛𝐲 {} 🎉".format(message.from_user.mention))
+            await asyncio.sleep(0.8)
+            
+            await welcome_msg.edit_text("𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐁𝐚𝐛𝐲 {} 🥰".format(message.from_user.mention))
+            await asyncio.sleep(1.0)
+            
+            await welcome_msg.delete()
+            
+            # Starting animation
+            start_msg = await message.reply_text("**⚡️ѕ**")
+            await asyncio.sleep(0.8)
+            
+            await start_msg.edit_text("**⚡ѕт**")
+            await asyncio.sleep(0.8)
+            
+            await start_msg.edit_text("**⚡ѕтα**")
+            await asyncio.sleep(0.8)
+            
+            await start_msg.edit_text("**⚡ѕтαя**")
+            await asyncio.sleep(0.8)
+            
+            await start_msg.edit_text("**⚡ѕтαят**")
+            await asyncio.sleep(0.8)
+            
+            await start_msg.edit_text("**⚡ѕтαятι**")
+            await asyncio.sleep(0.8)
+            
+            await start_msg.edit_text("**⚡ѕтαятιи**")
+            await asyncio.sleep(0.8)
+            
+            await start_msg.edit_text("**⚡ѕтαятιиg**")
+            await asyncio.sleep(0.8)
+            
+            await start_msg.edit_text("**⚡ѕтαятιиg.**")
+            await asyncio.sleep(0.8)
+            
+            await start_msg.edit_text("**⚡ѕтαятιиg..**")
+            await asyncio.sleep(0.8)
+            
+            await start_msg.edit_text("**⚡ѕтαятιиg...**")
+            await asyncio.sleep(1.5)
+            
+            await start_msg.delete()
+            
+            # Send sticker
+            sticker_msg = await message.reply_sticker("CAACAgUAAxkBAAEPj4Vo676_xVsQBZOGoE_g4ttX29VVhQACOBsAApMnWFfxTe6MJ9ju9jYE")
+            await asyncio.sleep(3.0)
+            await sticker_msg.delete()
+            # ANIMATION PART END
+
             await app.resolve_peer(OWNER_ID[0])
             OWNER = OWNER_ID[0]
         except Exception:
@@ -277,18 +327,18 @@ async def welcome(client, message: Message):
             return
 
 
-@app.on_message(commandpro(["/alive", "Alexa"]))
+@app.on_message(commandpro(["/alive", "Priya"]))
 async def alive(client, message: Message):
     await message.reply_photo(
         photo="https://telegra.ph/file/125f531d44a9999290cac.jpg",
-        caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ ʜᴇʟʟᴏ, ᴀʟᴇxᴀ ɪs ᴡᴏʀᴋɪɴɢ ᴀɴᴅ ғᴜɴᴄᴛɪᴏɴɪɴɢ ᴘʀᴏᴘᴇʀʟʏ\n✪ ᴛʜᴀɴᴋs ᴛᴏ ʏᴜᴋᴋɪ ᴛᴇᴀᴍ 🌼 ..\n\n┏━━━━━━━━━━━━━━━━━┓\n┣★ ᴏᴡɴᴇʀ    : [ᴀsᴀᴅ ᴀʟɪ](https://t.me/Dr_Asad_Ali)\n┣★ ᴜᴘᴅᴀᴛᴇs › : [ᴀʟᴇxᴀ ʜᴇʟᴘ](https://t.me/Alexa_BotUpdates)┓\n┣★ ʀᴇᴘᴏ › : [ᴀʟᴇxᴀ ʀᴇᴘᴏ](https://github.com/jankarikiduniya/AlexaMusic)\n┗━━━━━━━━━━━━━━━━━┛\n\n💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ\nᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/Jankari_Ki_Duniya) ᴍᴀᴋᴇ sᴜʀᴇ ᴛᴏ sᴛᴀʀ ᴏᴜʀ ᴘʀᴏᴊᴇᴄᴛ ...\n\n━━━━━━━━━━━━━━━━━━━━━━━━""",
+        caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ ʜᴇʟʟᴏ, ᴘʀɪʏᴀ ɪs ᴡᴏʀᴋɪɴɢ ᴀɴᴅ ғᴜɴᴄᴛɪᴏɴɪɴɢ ᴘʀᴏᴘᴇʀʟʏ\n✪ ᴛʜᴀɴᴋs ᴛᴏ ʏᴜᴋᴋɪ ᴛᴇᴀᴍ 🌼 ..\n\n┏━━━━━━━━━━━━━━━━━┓\n┣★ ᴏᴡɴᴇʀ    : [ᴀsᴀᴅ ᴀʟɪ](https://t.me/Dr_Asad_Ali)\n┣★ ᴜᴘᴅᴀᴛᴇs › : [ᴘʀɪʏᴀ ʜᴇʟᴘ](https://t.me/Alexa_BotUpdates)┓\n┣★ ʀᴇᴘᴏ › : [ᴘʀɪʏᴀ ʀᴇᴘᴏ](https://github.com/jankarikiduniya/AlexaMusic)\n┗━━━━━━━━━━━━━━━━━┛\n\n💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ\nᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/Jankari_Ki_Duniya) ᴍᴀᴋᴇ sᴜʀᴇ ᴛᴏ sᴛᴀʀ ᴏᴜʀ ᴘʀᴏᴊᴇᴄᴛ ...\n\n━━━━━━━━━━━━━━━━━━━━━━━━""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🌼 ᴀʟᴇxᴀ ᴄʜᴀᴛ 💮", url=config.SUPPORT_GROUP)]]
+            [[InlineKeyboardButton("🌼 ᴘʀɪʏᴀ ᴄʜᴀᴛ 💮", url=config.SUPPORT_GROUP)]]
         ),
     )
 
 
-@app.on_message(commandpro(["/verify", "alexaverification"]))
+@app.on_message(commandpro(["/verify", "priyaverification"]))
 async def verify(client, message: Message):
     if await is_served_user(message.from_user.id):
         await message.reply_text(
@@ -298,8 +348,8 @@ async def verify(client, message: Message):
     await add_served_user(message.from_user.id)
     await message.reply_photo(
         photo="https://telegra.ph/file/7f08acd78577f99f60ff5.png",
-        caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ **ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴ** 🎉\n✪ ɴᴏᴡ ʏᴏᴜ ᴀʀᴇ ᴀʟᴇxᴀ ᴠᴇʀɪғɪᴇᴅ ᴍᴇᴍʙᴇʀ ɢᴏ ʙᴀᴄᴋ ᴀɴᴅ ᴇɴᴊᴏʏ ᴏᴜʀ sᴇʀᴠɪᴄᴇ ᴀɴᴅ ᴘʟᴀʏ ᴍᴜsɪᴄ 🌼 ..\n\n━━━━━━━━━━━━━━━━━━━━━━━━""",
+        caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ **ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴ** 🎉\n✪ ɴᴏᴡ ʏᴏᴜ ᴀʀᴇ ᴘʀɪʏᴀ ᴠᴇʀɪғɪᴇᴅ ᴍᴇᴍʙᴇʀ ɢᴏ ʙᴀᴄᴋ ᴀɴᴅ ᴇɴᴊᴏʏ ᴏᴜʀ sᴇʀᴠɪᴄᴇ ᴀɴᴅ ᴘʟᴀʏ ᴍᴜsɪᴄ 🌼 ..\n\n━━━━━━━━━━━━━━━━━━━━━━━━""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🌼 ᴀʟᴇxᴀ ᴄʜᴀᴛ 💮", url=config.SUPPORT_GROUP)]]
+            [[InlineKeyboardButton("🌼 ᴘʀɪʏᴀ ᴄʜᴀᴛ 💮", url=config.SUPPORT_GROUP)]]
         ),
-    )
+                )
